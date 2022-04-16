@@ -3,7 +3,7 @@ SESSION_START();
 //Song Titles
 $song_lyrics1 = "Ginintuang Tanawin";
 $song_lyrics2 = "Ikaw Ang Musika";
-$song_lyrics3 = "Kahel Na langit";
+$song_lyrics3 = "Kahel Na Langit";
 $song_lyrics4 = "Ikaw Ang Pahinga Ko";
 $song_lyrics5 = "Marupok";
 //current url redirection
@@ -120,7 +120,7 @@ if(isset($_REQUEST['search_button'])=== true){
         </section>
 
         <footer class="py-3 bg-danger">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; 2022. Kyla Patrrice Soberano</p></div>
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; 2022. Kyla Patrrice Soberano Sace</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="js/bootstrap.bundle.min.js"></script>
