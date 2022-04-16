@@ -6,6 +6,8 @@ $song_lyrics2 = "Ikaw Ang Musika";
 $song_lyrics3 = "Kahel Na Langit";
 $song_lyrics4 = "Ikaw Ang Pahinga Ko";
 $song_lyrics5 = "Marupok";
+$song_lyrics6 = "My Favorite Movie";
+
 //current url redirection
 $url_add = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
@@ -29,12 +31,17 @@ if(isset($_REQUEST['search_button'])=== true){
     else if($_REQUEST['song_title'] == $song_lyrics5){
         header("Location: ".$url_add."?marupok");
     }
+    else if($_REQUEST['song_title'] == $song_lyrics6){
+        header("Location: ".$url_add."?myfavoritemovie");
+    }
+
         //session variable
         $_SESSION['ses_lyrics1'] = $song_lyrics1;
         $_SESSION['ses_lyrics2'] = $song_lyrics2;
         $_SESSION['ses_lyrics3'] = $song_lyrics3;
         $_SESSION['ses_lyrics4'] = $song_lyrics4;
         $_SESSION['ses_lyrics5'] = $song_lyrics5;
+        $_SESSION['ses_lyrics5'] = $song_lyrics6;
           
 }
 ?>
@@ -60,12 +67,14 @@ if(isset($_REQUEST['search_button'])=== true){
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-light" href="index.php">•</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href="index.php">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="song1.php">Song 1</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="song2.php">Song 2</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="song3.php">Song 3</a></li>
-                         <li class="nav-item"><a class="nav-link text-light" href="song4.php">Song 4</a></li>
-                          <li class="nav-item"><a class="nav-link text-light" href="#">Song 5</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="song1.php">GinintuangTanawin</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="song2.php">IkawAngMusika</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="song3.php">KahelNaLangit</a></li>
+                         <li class="nav-item"><a class="nav-link text-light" href="song4.php">IkawAngPahingaKo</a></li>
+                          <li class="nav-item"><a class="nav-link text-light" href="song5.php">Marupok</a></li>
+                          <li class="nav-item"><a class="nav-link text-light" href="song6.php">MyFavoriteMovie</a></li>
                     </ul>
                 </div>
             </div>
@@ -103,7 +112,11 @@ if(isset($_REQUEST['search_button'])=== true){
                                 }else if(isset($_REQUEST['marupok'])=== true){
                                     echo "Redirecting...";
                                     header ("Refresh: 3; url=song5.php");
+                                }else if(isset($_REQUEST['myfavoritemovie'])=== true){
+                                    echo "Redirecting...";
+                                    header ("Refresh: 3; url=song6.php");
                                 }
+
                                     
                                 ?>
                                 <div class="form-group">

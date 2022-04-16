@@ -18,12 +18,14 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-light" href="index.php">•</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href="index.php">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="song1.php">Ginintuang Tanawin</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="song2.php">Ikaw Ang Musika</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="song3.php">Kahel Na Langit</a></li>
-                         <li class="nav-item"><a class="nav-link text-light" href="song4.php">Ikaw Ang Pahinga Ko</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="song1.php">GinintuangTanawin</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="song2.php">IkawAngMusika</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="song3.php">KahelNaLangit</a></li>
+                         <li class="nav-item"><a class="nav-link text-light" href="song4.php">IkawAngPahingaKo</a></li>
                           <li class="nav-item"><a class="nav-link text-light" href="song5.php">Marupok</a></li>
+                          <li class="nav-item"><a class="nav-link text-light" href="song6.php">MyFavoriteMovie</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,6 +49,7 @@
 
                         echo "<h2 class='text-primary'>Marupok</h2>";
                         echo "<p class='lead '>Kyle Antang</p>";
+                        echo '<a href="https://youtu.be/9BfMpXqxZgU">Listen here.</a>';
                         echo "<br/>";
 
                         //1st stanza
